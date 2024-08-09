@@ -1,16 +1,9 @@
-//
-//  MeshGradient.swift
-//  SiriAnimationPrototype
-//
-//  Created by Siddhant Mehta on 2024-06-13.
-//
-
 import SwiftUI
 
 struct MeshGradientView: View {
     @Binding var maskTimer: Float
     @Binding var gradientSpeed: Float
-
+    
     var body: some View {
         MeshGradient(width: 3, height: 3, points: [
             .init(0, 0), .init(0.0, 0), .init(1, 0),
@@ -35,14 +28,18 @@ struct MeshGradientView: View {
         }
         .ignoresSafeArea()
     }
-
+    
     private func sinInRange(_ range: ClosedRange<Float>, offset: Float, timeScale: Float, t: Float) -> Float {
         let amplitude = (range.upperBound - range.lowerBound) / 2
         let midPoint = (range.upperBound + range.lowerBound) / 2
+        
         return midPoint + amplitude * sin(timeScale * t + offset)
     }
 }
 
 #Preview {
-    MeshGradientView(maskTimer: .constant(0.0), gradientSpeed: .constant(0.05))
+    MeshGradientView(
+        maskTimer: .constant(0.0),
+        gradientSpeed: .constant(0.05)
+    )
 }

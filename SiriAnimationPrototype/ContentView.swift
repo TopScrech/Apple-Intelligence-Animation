@@ -1,28 +1,17 @@
-//
-//  ContentView.swift
-//  SiriAnimationPrototype
-//
-//  Created by Siddhant Mehta on 2024-06-13.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    enum SiriState {
-        case none
-        case thinking
-    }
-    @State var state: SiriState = .none
+    @State private var state: SiriState = .none
     
     // Ripple animation vars
-    @State var counter: Int = 0
-    @State var origin: CGPoint = .init(x: 0.5, y: 0.5)
+    @State private var counter = 0
+    @State private var origin = CGPoint(x: 0.5, y: 0.5)
     
     // Gradient and masking vars
-    @State var gradientSpeed: Float = 0.03
-    @State var timer: Timer?
-    @State private var maskTimer: Float = 0.0
-
+    @State private var gradientSpeed: Float = 0.03
+    @State private var timer: Timer?
+    @State private var maskTimer: Float = 0
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -34,7 +23,7 @@ struct ContentView: View {
                 // Brightness rim on edges
                 if state == .thinking {
                     RoundedRectangle(cornerRadius: 52, style: .continuous)
-                        .stroke(Color.white, style: .init(lineWidth: 4))
+                        .stroke(.white, style: .init(lineWidth: 4))
                         .blur(radius: 4)
                 }
                 
@@ -64,33 +53,32 @@ struct ContentView: View {
     
     private var computedScale: CGFloat {
         switch state {
-        case .none: return 1.2
-        case .thinking: return 1
+        case .none: 1.2
+        case .thinking: 1
         }
     }
     
     private var rectangleSpeed: Float {
         switch state {
-        case .none: return 0
-        case .thinking: return 0.03
+        case .none: 0
+        case .thinking: 0.03
         }
     }
     
     private var animatedMaskBlur: CGFloat {
         switch state {
-        case .none: return 8
-        case .thinking: return 28
+        case .none: 8
+        case .thinking: 28
         }
     }
     
     private var containerOpacity: CGFloat {
         switch state {
-        case .none: return 0
-        case .thinking: return 1.0
+        case .none: 0
+        case .thinking: 1.0
         }
     }
 }
-
 
 #Preview {
     ContentView()
