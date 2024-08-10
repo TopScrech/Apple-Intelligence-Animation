@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
     @State private var state: SiriState = .none
     
     // Ripple animation vars
