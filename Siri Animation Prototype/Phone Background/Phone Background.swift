@@ -37,13 +37,13 @@ struct PhoneBackground: View {
             Image(.background)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .scaleEffect(1.2) // avoids clipping
+                .scaleEffect(1.2) // avoid clipping
                 .ignoresSafeArea()
             
             Rectangle()
                 .fill(.black)
                 .opacity(scrimOpacity)
-                .scaleEffect(1.2) // avoids clipping
+                .scaleEffect(1.2) // avoid clipping
             
             VStack {
                 welcomeText
@@ -64,13 +64,13 @@ struct PhoneBackground: View {
                 siriButtonView
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .padding(.bottom, 64)
             .onPressingChanged { point in
                 if let point {
                     origin = point
                     counter += 1
                 }
             }
-            .padding(.bottom, 64)
         }
     }
     

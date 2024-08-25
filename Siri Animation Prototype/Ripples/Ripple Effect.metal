@@ -1,10 +1,3 @@
-//
-//  RippleEffect.metal
-//  SiriAnimationPrototype
-//
-//  Created by Siddhant Mehta on 2024-06-13.
-//
-
 // Insert #include <metal_stdlib>
 #include <SwiftUI/SwiftUI.h>
 using namespace metal;

@@ -1,6 +1,6 @@
 import SwiftUI
 
-//  From Video: https://developer.apple.com/videos/play/wwdc2024/10151/?time=1416
+// https://developer.apple.com/videos/play/wwdc2024/10151/?time=1416
 
 /// A modifer that performs a ripple effect to its content whenever its trigger value changes
 struct RippleEffect<T: Equatable>: ViewModifier {
@@ -20,6 +20,7 @@ struct RippleEffect<T: Equatable>: ViewModifier {
             initialValue: 0,
             trigger: trigger
         ) { view, elapsedTime in
+            
             view.modifier(RippleModifier(
                 origin: origin,
                 elapsedTime: elapsedTime,
@@ -27,6 +28,7 @@ struct RippleEffect<T: Equatable>: ViewModifier {
             ))
         } keyframes: { _ in
             MoveKeyframe(0)
+            
             LinearKeyframe(duration, duration: duration)
         }
     }
@@ -34,7 +36,7 @@ struct RippleEffect<T: Equatable>: ViewModifier {
     var duration = 3.0
 }
 
-/// A modifier that applies a ripple effect to its content.
+/// A modifier that applies a ripple effect to its content
 struct RippleModifier: ViewModifier {
     var origin: CGPoint
     
@@ -85,11 +87,11 @@ extension View {
 struct SpatialPressingGestureModifier: ViewModifier {
     var onPressingChanged: (CGPoint?) -> Void
     
-    @State var currentLocation: CGPoint?
-    
     init(action: @escaping (CGPoint?) -> Void) {
-        self.onPressingChanged = action
+        onPressingChanged = action
     }
+    
+    @State var currentLocation: CGPoint?
     
     func body(content: Content) -> some View {
         let gesture = SpatialPressingGesture(location: $currentLocation)

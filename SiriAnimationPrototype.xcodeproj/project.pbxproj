@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C0A5A952C1AF77700B6680C /* AnimatedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A942C1AF77000B6680C /* AnimatedPath.swift */; };
-		2C0A5A992C1B604400B6680C /* MeshGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A982C1B604400B6680C /* MeshGradientView.swift */; };
-		2C0A5A9D2C1B640B00B6680C /* RippleEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A9C2C1B640B00B6680C /* RippleEffect.metal */; };
-		2C0A5A9F2C1B645D00B6680C /* RippleEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A9E2C1B645400B6680C /* RippleEffectModifier.swift */; };
-		2C0A5AA42C1B675C00B6680C /* PhoneBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5AA32C1B675500B6680C /* PhoneBackground.swift */; };
+		2C0A5A952C1AF77700B6680C /* Animated Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A942C1AF77000B6680C /* Animated Path.swift */; };
+		2C0A5A992C1B604400B6680C /* Mesh Gradient View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A982C1B604400B6680C /* Mesh Gradient View.swift */; };
+		2C0A5A9D2C1B640B00B6680C /* Ripple Effect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A9C2C1B640B00B6680C /* Ripple Effect.metal */; };
+		2C0A5A9F2C1B645D00B6680C /* Ripple Effect Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5A9E2C1B645400B6680C /* Ripple Effect Modifier.swift */; };
+		2C0A5AA42C1B675C00B6680C /* Phone Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A5AA32C1B675500B6680C /* Phone Background.swift */; };
 		2CA92B5C2C1AE48E00EE3AFE /* Siri Animation Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA92B5B2C1AE48E00EE3AFE /* Siri Animation Prototype.swift */; };
-		2CA92B5E2C1AE48E00EE3AFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA92B5D2C1AE48E00EE3AFE /* ContentView.swift */; };
+		2CA92B5E2C1AE48E00EE3AFE /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA92B5D2C1AE48E00EE3AFE /* Content View.swift */; };
 		2CA92B602C1AE48E00EE3AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA92B5F2C1AE48E00EE3AFE /* Assets.xcassets */; };
-		F3E7EC202C66DA7F008CD17B /* SiriState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC1F2C66DA7F008CD17B /* SiriState.swift */; };
+		F3E7EC202C66DA7F008CD17B /* Siri State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC1F2C66DA7F008CD17B /* Siri State.swift */; };
 		F3E7EC232C66DB09008CD17B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E7EC222C66DB09008CD17B /* ScrechKit */; };
 		F3E7EC272C66E063008CD17B /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC262C66E063008CD17B /* Home View.swift */; };
 		F3E7EC302C66F307008CD17B /* Sparkles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7EC2F2C66F307008CD17B /* Sparkles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C0A5A942C1AF77000B6680C /* AnimatedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPath.swift; sourceTree = "<group>"; };
-		2C0A5A982C1B604400B6680C /* MeshGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientView.swift; sourceTree = "<group>"; };
-		2C0A5A9C2C1B640B00B6680C /* RippleEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RippleEffect.metal; sourceTree = "<group>"; };
-		2C0A5A9E2C1B645400B6680C /* RippleEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffectModifier.swift; sourceTree = "<group>"; };
-		2C0A5AA32C1B675500B6680C /* PhoneBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBackground.swift; sourceTree = "<group>"; };
+		2C0A5A942C1AF77000B6680C /* Animated Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animated Path.swift"; sourceTree = "<group>"; };
+		2C0A5A982C1B604400B6680C /* Mesh Gradient View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh Gradient View.swift"; sourceTree = "<group>"; };
+		2C0A5A9C2C1B640B00B6680C /* Ripple Effect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = "Ripple Effect.metal"; sourceTree = "<group>"; };
+		2C0A5A9E2C1B645400B6680C /* Ripple Effect Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ripple Effect Modifier.swift"; sourceTree = "<group>"; };
+		2C0A5AA32C1B675500B6680C /* Phone Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Phone Background.swift"; sourceTree = "<group>"; };
 		2CA92B582C1AE48E00EE3AFE /* SiriAnimationPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriAnimationPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA92B5B2C1AE48E00EE3AFE /* Siri Animation Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Siri Animation Prototype.swift"; sourceTree = "<group>"; };
-		2CA92B5D2C1AE48E00EE3AFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CA92B5D2C1AE48E00EE3AFE /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		2CA92B5F2C1AE48E00EE3AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3E7EC1F2C66DA7F008CD17B /* SiriState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriState.swift; sourceTree = "<group>"; };
+		F3E7EC1F2C66DA7F008CD17B /* Siri State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Siri State.swift"; sourceTree = "<group>"; };
 		F3E7EC262C66E063008CD17B /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3E7EC2F2C66F307008CD17B /* Sparkles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,28 +51,28 @@
 		2C0A5AA02C1B646A00B6680C /* Ripples */ = {
 			isa = PBXGroup;
 			children = (
-				2C0A5A9E2C1B645400B6680C /* RippleEffectModifier.swift */,
-				2C0A5A9C2C1B640B00B6680C /* RippleEffect.metal */,
+				2C0A5A9E2C1B645400B6680C /* Ripple Effect Modifier.swift */,
+				2C0A5A9C2C1B640B00B6680C /* Ripple Effect.metal */,
 			);
 			path = Ripples;
 			sourceTree = "<group>";
 		};
-		2C0A5AA12C1B647700B6680C /* SiriGradients */ = {
+		2C0A5AA12C1B647700B6680C /* Siri Gradients */ = {
 			isa = PBXGroup;
 			children = (
-				2C0A5A982C1B604400B6680C /* MeshGradientView.swift */,
-				2C0A5A942C1AF77000B6680C /* AnimatedPath.swift */,
+				2C0A5A982C1B604400B6680C /* Mesh Gradient View.swift */,
+				2C0A5A942C1AF77000B6680C /* Animated Path.swift */,
 			);
-			path = SiriGradients;
+			path = "Siri Gradients";
 			sourceTree = "<group>";
 		};
-		2C0A5AA22C1B674600B6680C /* PhoneBackground */ = {
+		2C0A5AA22C1B674600B6680C /* Phone Background */ = {
 			isa = PBXGroup;
 			children = (
-				2C0A5AA32C1B675500B6680C /* PhoneBackground.swift */,
+				2C0A5AA32C1B675500B6680C /* Phone Background.swift */,
 				F3E7EC2F2C66F307008CD17B /* Sparkles.swift */,
 			);
-			path = PhoneBackground;
+			path = "Phone Background";
 			sourceTree = "<group>";
 		};
 		2CA92B4F2C1AE48E00EE3AFE = {
@@ -81,7 +81,7 @@
 				2CA92B5B2C1AE48E00EE3AFE /* Siri Animation Prototype.swift */,
 				F3E7EC262C66E063008CD17B /* Home View.swift */,
 				2CA92B5F2C1AE48E00EE3AFE /* Assets.xcassets */,
-				2CA92B5A2C1AE48E00EE3AFE /* SiriAnimationPrototype */,
+				2CA92B5A2C1AE48E00EE3AFE /* Siri Animation Prototype */,
 				2CA92B592C1AE48E00EE3AFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,16 +94,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2CA92B5A2C1AE48E00EE3AFE /* SiriAnimationPrototype */ = {
+		2CA92B5A2C1AE48E00EE3AFE /* Siri Animation Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				2CA92B5D2C1AE48E00EE3AFE /* ContentView.swift */,
-				F3E7EC1F2C66DA7F008CD17B /* SiriState.swift */,
-				2C0A5AA22C1B674600B6680C /* PhoneBackground */,
-				2C0A5AA12C1B647700B6680C /* SiriGradients */,
+				2CA92B5D2C1AE48E00EE3AFE /* Content View.swift */,
+				F3E7EC1F2C66DA7F008CD17B /* Siri State.swift */,
+				2C0A5AA22C1B674600B6680C /* Phone Background */,
+				2C0A5AA12C1B647700B6680C /* Siri Gradients */,
 				2C0A5AA02C1B646A00B6680C /* Ripples */,
 			);
-			path = SiriAnimationPrototype;
+			path = "Siri Animation Prototype";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,16 +178,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0A5A992C1B604400B6680C /* MeshGradientView.swift in Sources */,
-				2CA92B5E2C1AE48E00EE3AFE /* ContentView.swift in Sources */,
-				F3E7EC202C66DA7F008CD17B /* SiriState.swift in Sources */,
+				2C0A5A992C1B604400B6680C /* Mesh Gradient View.swift in Sources */,
+				2CA92B5E2C1AE48E00EE3AFE /* Content View.swift in Sources */,
+				F3E7EC202C66DA7F008CD17B /* Siri State.swift in Sources */,
 				2CA92B5C2C1AE48E00EE3AFE /* Siri Animation Prototype.swift in Sources */,
 				F3E7EC272C66E063008CD17B /* Home View.swift in Sources */,
-				2C0A5A9F2C1B645D00B6680C /* RippleEffectModifier.swift in Sources */,
-				2C0A5A952C1AF77700B6680C /* AnimatedPath.swift in Sources */,
-				2C0A5A9D2C1B640B00B6680C /* RippleEffect.metal in Sources */,
+				2C0A5A9F2C1B645D00B6680C /* Ripple Effect Modifier.swift in Sources */,
+				2C0A5A952C1AF77700B6680C /* Animated Path.swift in Sources */,
+				2C0A5A9D2C1B640B00B6680C /* Ripple Effect.metal in Sources */,
 				F3E7EC302C66F307008CD17B /* Sparkles.swift in Sources */,
-				2C0A5AA42C1B675C00B6680C /* PhoneBackground.swift in Sources */,
+				2C0A5AA42C1B675C00B6680C /* Phone Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

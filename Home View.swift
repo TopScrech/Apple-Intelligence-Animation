@@ -8,9 +8,9 @@ struct HomeView: View {
             Button("Present Full Screen Sheet") {
                 isFullScreenPresented = true
             }
-            .fullScreenCover(isPresented: $isFullScreenPresented) {
-                ContentView()
-            }
+        }
+        .fullScreenCover(isPresented: $isFullScreenPresented) {
+            ContentView()
         }
     }
 }

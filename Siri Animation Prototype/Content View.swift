@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {    
+struct ContentView: View {
     @State private var state: SiriState = .none
     
     // Ripple animation vars
@@ -9,8 +9,8 @@ struct ContentView: View {
     
     // Gradient and masking vars
     @State private var gradientSpeed: Float = 0.03
-    @State private var timer: Timer?
     @State private var maskTimer: Float = 0
+    @State private var timer: Timer?
     
     var body: some View {
         GeometryReader { geometry in
