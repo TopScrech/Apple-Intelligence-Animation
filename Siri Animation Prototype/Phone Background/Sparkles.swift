@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct Sparkles: View {
-    private let mesh = Gradient(colors: [.yellow, .purple, .indigo,])
+    private let mesh = Gradient(colors: [.yellow, .purple, .indigo])
+    
+    @State private var isAnimating = false
     
     var body: some View {
         Image(systemName: "sparkles")

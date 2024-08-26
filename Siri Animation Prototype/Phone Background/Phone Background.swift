@@ -89,21 +89,23 @@ struct PhoneBackground: View {
     
     private var siriButtonView: some View {
         Button {
-            withAnimation(.easeInOut(duration: 0.9)) {
-                switch state {
-                case .none:
-                    if step != 3 {
+            switch state {
+            case .none:
+                if step != 3 {
+//                    withAnimation(.easeInOut(duration: 0.2)) {
                         step += 1
-                    } else {
+//                    }
+                } else {
+                    withAnimation(.easeInOut(duration: 0.9)) {
                         state = .thinking
                     }
-                    
-                case .thinking:
-                    state = .none
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
-                        dismiss()
-                    }
+                }
+                
+            case .thinking:
+                state = .none
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.25) {
+                    dismiss()
                 }
             }
         } label: {
