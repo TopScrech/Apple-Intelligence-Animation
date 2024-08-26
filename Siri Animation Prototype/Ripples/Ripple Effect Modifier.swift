@@ -12,6 +12,8 @@ struct RippleEffect<T: Equatable>: ViewModifier {
         self.trigger = trigger
     }
     
+    var duration = 3.0
+    
     func body(content: Content) -> some View {
         let origin = origin
         let duration = duration
@@ -32,8 +34,6 @@ struct RippleEffect<T: Equatable>: ViewModifier {
             LinearKeyframe(duration, duration: duration)
         }
     }
-    
-    var duration = 3.0
 }
 
 /// A modifier that applies a ripple effect to its content
@@ -80,14 +80,14 @@ struct RippleModifier: ViewModifier {
 
 extension View {
     func onPressingChanged(_ action: @escaping (CGPoint?) -> Void) -> some View {
-        modifier(SpatialPressingGestureModifier(action: action))
+        modifier(SpatialPressingGestureModifier(action))
     }
 }
 
 struct SpatialPressingGestureModifier: ViewModifier {
     var onPressingChanged: (CGPoint?) -> Void
     
-    init(action: @escaping (CGPoint?) -> Void) {
+    init(_ action: @escaping (CGPoint?) -> Void) {
         onPressingChanged = action
     }
     

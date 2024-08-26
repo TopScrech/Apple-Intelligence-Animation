@@ -13,11 +13,11 @@ struct ContentView: View {
     @State private var timer: Timer?
     
     var body: some View {
-        GeometryReader { geometry in
+        GeometryReader { geo in
             ZStack {
                 // Colorful animated gradient
                 MeshGradientView(maskTimer: $maskTimer, gradientSpeed: $gradientSpeed)
-                    .scaleEffect(1.3) // avoids clipping
+                    .scaleEffect(1.3) // avoid clipping
                     .opacity(containerOpacity)
                 
                 // Brightness rim on edges
@@ -30,9 +30,9 @@ struct ContentView: View {
                 // Phone background mock, includes button
                 PhoneBackground(state: $state, origin: $origin, counter: $counter)
                     .mask {
-                        AnimatedRectangle(size: geometry.size, cornerRadius: 48, t: CGFloat(maskTimer))
+                        AnimatedRectangle(size: geo.size, cornerRadius: 48, t: CGFloat(maskTimer))
                             .scaleEffect(computedScale)
-                            .frame(width: geometry.size.width, height: geometry.size.height)
+                            .frame(width: geo.size.width, height: geo.size.height)
                             .blur(radius: animatedMaskBlur)
                     }
             }
@@ -75,7 +75,7 @@ struct ContentView: View {
     private var containerOpacity: CGFloat {
         switch state {
         case .none: 0
-        case .thinking: 1.0
+        case .thinking: 1
         }
     }
 }

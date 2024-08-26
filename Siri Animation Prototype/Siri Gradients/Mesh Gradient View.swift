@@ -39,7 +39,7 @@ struct MeshGradientView: View {
 
 #Preview {
     MeshGradientView(
-        maskTimer: .constant(0.0),
+        maskTimer: .constant(0),
         gradientSpeed: .constant(0.05)
     )
 }

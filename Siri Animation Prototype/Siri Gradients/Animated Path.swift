@@ -23,22 +23,22 @@ struct AnimatedRectangle: Shape {
         
         // Define the initial points
         let initialPoints = [
-            CGPoint(x: padding + radius, y: padding),
-            CGPoint(x: width * 0.25 + padding, y: padding),
-            CGPoint(x: width * 0.75 + padding, y: padding),
+            CGPoint(x: padding + radius,         y: padding),
+            CGPoint(x: width * 0.25 + padding,   y: padding),
+            CGPoint(x: width * 0.75 + padding,   y: padding),
             CGPoint(x: width - padding - radius, y: padding),
-            CGPoint(x: width - padding, y: padding + radius),
-            CGPoint(x: width - padding, y: height * 0.25 - padding),
-            CGPoint(x: width - padding, y: height * 0.75 - padding),
-            CGPoint(x: width - padding, y: height - padding - radius),
+            CGPoint(x: width - padding,          y: padding + radius),
+            CGPoint(x: width - padding,          y: height * 0.25 - padding),
+            CGPoint(x: width - padding,          y: height * 0.75 - padding),
+            CGPoint(x: width - padding,          y: height - padding - radius),
             CGPoint(x: width - padding - radius, y: height - padding),
-            CGPoint(x: width * 0.75 - padding, y: height - padding),
-            CGPoint(x: width * 0.25 - padding, y: height - padding),
-            CGPoint(x: padding + radius, y: height - padding),
-            CGPoint(x: padding, y: height - padding - radius),
-            CGPoint(x: padding, y: height * 0.75 - padding),
-            CGPoint(x: padding, y: height * 0.25 - padding),
-            CGPoint(x: padding, y: padding + radius)
+            CGPoint(x: width * 0.75 - padding,   y: height - padding),
+            CGPoint(x: width * 0.25 - padding,   y: height - padding),
+            CGPoint(x: padding + radius,         y: height - padding),
+            CGPoint(x: padding,                  y: height - padding - radius),
+            CGPoint(x: padding,                  y: height * 0.75 - padding),
+            CGPoint(x: padding,                  y: height * 0.25 - padding),
+            CGPoint(x: padding,                  y: padding + radius)
         ]
         
         //        // Define the arc centers
@@ -49,7 +49,7 @@ struct AnimatedRectangle: Shape {
         //            CGPoint(x: padding + radius, y: height - padding - radius) // Bottom-left
         //        ]
         
-        // Animate the points
+        // Animate points
         let points = initialPoints.map { point in
             CGPoint(
                 x: point.x + 10 * sin(t + point.y * 0.1),
@@ -57,7 +57,7 @@ struct AnimatedRectangle: Shape {
             )
         }
         
-        // Animate the arc centers
+        // Animate arc centers
         //        let arcCenters = initialArcCenters.map { center in
         //            CGPoint(
         //                x: center.x + 10 * sin(t + center.y * 0.3),
@@ -65,7 +65,7 @@ struct AnimatedRectangle: Shape {
         //            )
         //        }
         
-        // Draw the path
+        // Draw path
         path.move(to: CGPoint(x: padding, y: padding + radius))
         
         // Top-left corner
