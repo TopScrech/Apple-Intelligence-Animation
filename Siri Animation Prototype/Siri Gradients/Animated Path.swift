@@ -43,10 +43,10 @@ struct AnimatedRectangle: Shape {
         
         //        // Define the arc centers
         //        let initialArcCenters = [
-        //            CGPoint(x: padding + radius, y: padding + radius), // Top-left
-        //            CGPoint(x: width - padding - radius, y: padding + radius), // Top-right
+        //            CGPoint(x: padding + radius, y: padding + radius),                    // Top-left
+        //            CGPoint(x: width - padding - radius, y: padding + radius),           // Top-right
         //            CGPoint(x: width - padding - radius, y: height - padding - radius), // Bottom-right
-        //            CGPoint(x: padding + radius, y: height - padding - radius) // Bottom-left
+        //            CGPoint(x: padding + radius, y: height - padding - radius)         // Bottom-left
         //        ]
         
         // Animate points
@@ -58,18 +58,18 @@ struct AnimatedRectangle: Shape {
         }
         
         // Animate arc centers
-        //        let arcCenters = initialArcCenters.map { center in
-        //            CGPoint(
-        //                x: center.x + 10 * sin(t + center.y * 0.3),
-        //                y: center.y + 10 * sin(t + center.x * 0.3)
-        //            )
-        //        }
+        // let arcCenters = initialArcCenters.map { center in
+        //     CGPoint(
+        //         x: center.x + 10 * sin(t + center.y * 0.3),
+        //         y: center.y + 10 * sin(t + center.x * 0.3)
+        //     )
+        // }
         
         // Draw path
         path.move(to: CGPoint(x: padding, y: padding + radius))
         
         // Top-left corner
-        //        path.addArc(center: arcCenters[0], radius: radius, startAngle: .degrees(180), endAngle: .degrees(270), clockwise: false)
+        // path.addArc(center: arcCenters[0], radius: radius, startAngle: .degrees(180), endAngle: .degrees(270), clockwise: false)
         
         // Top edge
         for point in points[0...2] {
@@ -77,7 +77,7 @@ struct AnimatedRectangle: Shape {
         }
         
         // Top-right corner
-        //        path.addArc(center: arcCenters[1], radius: radius, startAngle: .degrees(270), endAngle: .degrees(0), clockwise: false)
+        // path.addArc(center: arcCenters[1], radius: radius, startAngle: .degrees(270), endAngle: .degrees(0), clockwise: false)
         
         // Right edge
         for point in points[4...7] {
@@ -85,7 +85,7 @@ struct AnimatedRectangle: Shape {
         }
         
         // Bottom-right corner
-        //        path.addArc(center: arcCenters[2], radius: radius, startAngle: .degrees(0), endAngle: .degrees(90), clockwise: false)
+        // path.addArc(center: arcCenters[2], radius: radius, startAngle: .degrees(0), endAngle: .degrees(90), clockwise: false)
         
         // Bottom edge
         for point in points[8...10] {
@@ -93,7 +93,7 @@ struct AnimatedRectangle: Shape {
         }
         
         // Bottom-left corner
-        //        path.addArc(center: arcCenters[3], radius: radius, startAngle: .degrees(90), endAngle: .degrees(180), clockwise: false)
+        // path.addArc(center: arcCenters[3], radius: radius, startAngle: .degrees(90), endAngle: .degrees(180), clockwise: false)
         
         // Left edge
         for point in points[11...14] {
