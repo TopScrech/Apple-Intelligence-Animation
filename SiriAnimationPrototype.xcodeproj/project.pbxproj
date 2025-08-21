@@ -391,8 +391,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
