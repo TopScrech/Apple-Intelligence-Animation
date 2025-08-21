@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,11 +39,9 @@
 /* Begin PBXFrameworksBuildPhase section */
 		2CA92B552C1AE48E00EE3AFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3E7EC232C66DB09008CD17B /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -119,8 +117,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = SiriAnimationPrototype;
 			productName = SiriAnimationPrototype;
 			productReference = 2CA92B582C1AE48E00EE3AFE /* SiriAnimationPrototype.app */;
@@ -134,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					2CA92B572C1AE48E00EE3AFE = {
 						CreatedOnToolsVersion = 16.0;
@@ -142,7 +138,6 @@
 				};
 			};
 			buildConfigurationList = 2CA92B532C1AE48E00EE3AFE /* Build configuration list for PBXProject "SiriAnimationPrototype" */;
-			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -153,6 +148,7 @@
 			packageReferences = (
 				F3E7EC212C66DB09008CD17B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 2CA92B592C1AE48E00EE3AFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,18 +161,15 @@
 /* Begin PBXResourcesBuildPhase section */
 		2CA92B562C1AE48E00EE3AFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				2CA92B602C1AE48E00EE3AFE /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CA92B542C1AE48E00EE3AFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				2C0A5A992C1B604400B6680C /* Mesh Gradient View.swift in Sources */,
 				2CA92B5E2C1AE48E00EE3AFE /* Content View.swift in Sources */,
@@ -189,12 +182,11 @@
 				F3E7EC302C66F307008CD17B /* Sparkles.swift in Sources */,
 				2C0A5AA42C1B675C00B6680C /* Phone Background.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2CA92B642C1AE48E00EE3AFE /* Debug */ = {
+		2CA92B642C1AE48E00EE3AFE /* Debug configuration for PBXProject "SiriAnimationPrototype" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,6 +221,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -252,12 +245,13 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		2CA92B652C1AE48E00EE3AFE /* Release */ = {
+		2CA92B652C1AE48E00EE3AFE /* Release configuration for PBXProject "SiriAnimationPrototype" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,6 +286,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -308,19 +303,19 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2CA92B672C1AE48E00EE3AFE /* Debug */ = {
+		2CA92B672C1AE48E00EE3AFE /* Debug configuration for PBXNativeTarget "SiriAnimationPrototype" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,14 +337,13 @@
 			};
 			name = Debug;
 		};
-		2CA92B682C1AE48E00EE3AFE /* Release */ = {
+		2CA92B682C1AE48E00EE3AFE /* Release configuration for PBXNativeTarget "SiriAnimationPrototype" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -377,19 +371,17 @@
 		2CA92B532C1AE48E00EE3AFE /* Build configuration list for PBXProject "SiriAnimationPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2CA92B642C1AE48E00EE3AFE /* Debug */,
-				2CA92B652C1AE48E00EE3AFE /* Release */,
+				2CA92B642C1AE48E00EE3AFE /* Debug configuration for PBXProject "SiriAnimationPrototype" */,
+				2CA92B652C1AE48E00EE3AFE /* Release configuration for PBXProject "SiriAnimationPrototype" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		2CA92B662C1AE48E00EE3AFE /* Build configuration list for PBXNativeTarget "SiriAnimationPrototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2CA92B672C1AE48E00EE3AFE /* Debug */,
-				2CA92B682C1AE48E00EE3AFE /* Release */,
+				2CA92B672C1AE48E00EE3AFE /* Debug configuration for PBXNativeTarget "SiriAnimationPrototype" */,
+				2CA92B682C1AE48E00EE3AFE /* Release configuration for PBXNativeTarget "SiriAnimationPrototype" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
