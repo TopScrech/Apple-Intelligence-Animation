@@ -9,7 +9,7 @@ struct HomeView: View {
                 isFullScreenPresented = true
             }
         }
-        .fullScreenCover(isPresented: $isFullScreenPresented) {
+        .fullScreenCover($isFullScreenPresented) {
             ContentView()
         }
     }
