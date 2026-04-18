@@ -16,11 +16,8 @@ struct PhoneBackground: View {
     
     private var iconName: String {
         switch state {
-        case .none:
-            "arrow.forward"
-            
-        case .thinking:
-            "pause"
+        case .none: "arrow.forward"
+        case .thinking: "pause"
         }
     }
     
