@@ -22,6 +22,7 @@ struct PhoneBackground: View {
     }
     
     @State private var step = 0
+    
     @State private var steps = [
         "Reinstalling your server will stop it",
         "And then re-run the installation script that initially set it",
@@ -108,7 +109,7 @@ struct PhoneBackground: View {
         } label: {
             if state == .thinking {
                 Sparkles()
-                    .frame(width: 96, height: 96)
+                    .frame(96)
                     .background {
                         RoundedRectangle(cornerRadius: 32, style: .continuous)
                             .fill(.gray.opacity(0.1))
@@ -116,9 +117,11 @@ struct PhoneBackground: View {
             } else {
                 Image(systemName: iconName)
                     .contentTransition(.symbolEffect(.replace))
-                    .frame(width: 96, height: 96)
+                    .frame(96)
                     .foregroundStyle(.white)
-                    .font(.system(size: 32, weight: .bold, design: .monospaced))
+                    .fontSize(32)
+                    .bold()
+                    .monospaced()
                     .background {
                         RoundedRectangle(cornerRadius: 32, style: .continuous)
                             .fill(.gray.opacity(0.1))
@@ -133,9 +136,5 @@ struct PhoneBackground: View {
     @Previewable @State var origin = CGPoint(x: 0.5, y: 0.5)
     @Previewable @State var counter = 0
     
-    PhoneBackground(
-        state: $state,
-        origin: $origin,
-        counter: $counter
-    )
+    PhoneBackground(state: $state, origin: $origin, counter: $counter)
 }
