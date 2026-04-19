@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct Sparkles: View {
     private let mesh = Gradient(colors: [.yellow, .purple, .indigo])

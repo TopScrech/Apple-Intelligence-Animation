@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct HomeView: View {
     @State private var isFullScreenPresented = false

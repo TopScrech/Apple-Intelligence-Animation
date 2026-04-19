@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct PhoneBackground: View {
     @Environment(\.dismiss) private var dismiss
